@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
 gem 'haml'
+gem 'paperclip', '~> 4.2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,5 +46,11 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'pry'
+  gem 'rspec-rails', '~> 3.0'
+end
+
+group :test do
+  gem 'shoulda-matchers', require: false
+  gem 'rspec-its'
 end
 

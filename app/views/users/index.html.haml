@@ -1,0 +1,4 @@
+- @users.each do |user|
+  = user.name
+  %div
+  = image_tag(user.photo.url(:thumb))

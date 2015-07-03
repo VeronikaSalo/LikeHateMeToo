@@ -1,5 +1,6 @@
 /public/assets
 /public/cache
+/public/system
 /.sass-cache
 /tmp
 /coverage

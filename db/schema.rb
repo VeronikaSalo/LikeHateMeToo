@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150605111413) do
+ActiveRecord::Schema.define(version: 20150622193950) do
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
@@ -19,8 +19,15 @@ ActiveRecord::Schema.define(version: 20150605111413) do
     t.string   "name"
     t.string   "oauth_token"
     t.datetime "oauth_expires_at"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end
