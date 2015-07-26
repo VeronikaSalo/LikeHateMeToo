@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   has_attached_file :photo, styles: { thumb: '150x150>', medium: '300x300>' }
   validates_attachment_content_type :photo, content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+  validates :name, presence: true
+  validates :email, presence: true
 
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |user|
