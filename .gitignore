@@ -1,5 +1,6 @@
 /public/assets
 /public/cache
+/public/system
 /.sass-cache
 /tmp
 /coverage
@@ -10,3 +11,4 @@ stdout
 /db/development.sqlite3
 /db/test.sqlite3
 /Gemfile.lock
+.idea/

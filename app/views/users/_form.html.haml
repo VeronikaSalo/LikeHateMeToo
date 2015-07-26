@@ -1,0 +1,4 @@
+= form_for @user, :html => { :multipart => true } do |form|
+  = form.file_field :photo
+  = form.text_field :name
+  = form.submit 'Update'

@@ -1,0 +1,17 @@
+%div
+  = @user.name
+%div
+  = @user.email
+%div
+  = @user.first_name
+%div
+  = @user.last_name
+%div
+  = image_tag @user.photo.url(:thumb)
+
+- if current_user?(@user)
+  = link_to 'Edit', edit_user_path(@user)
+
+
+-#= @user.attributes.each_key do |key|
+-#  = @user.send(key.to_sym)
